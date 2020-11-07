@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e5eff5;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    height: 100vh;
+    padding: 30px;
+}
+
+.container {
+    margin: auto;    
+    width: 100%;
+    max-width: 636px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 10px 20px 0 #98a6bd;
+    overflow: hidden;
+}
+
+main {
+    padding: 30px 25px 36px;
+
+    h2 {
+        color: #2ab2af;
+        font-size: 20px;   
+        margin: 0 0 30px;
+    }
+
+    h3 {
+        margin: 0 0 20px;
+        color: #c0df34;
+        font-size: 16px;
+    }
+
+    p {
+        color: #a2a6a9;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+.subscription {
+    background: #2bb3b1;
+    color: white;
+    padding: 30px 25px 24px;
+
+    h3 {
+        font-size: 18px;
+        margin: 0 0 10px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    span {
+        display: inline-block;
+        font-size: 28px;
+        font-weight: bold;
+        margin: 0 10px 10px 0;
+        position: relative;
+        top: 5px;
+    }
+
+    .cta {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        background: #c0df34;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 30px;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+        transition: all .5s ease;
+
+        &:hover {
+            color: #98a6bd;
+        }
+    }
+}
+
+.why-us {
+    background: #4abebd;
+    color: white;
+    padding: 30px 25px 20px;
+
+    h3 {
+        font-size: 18px;
+        margin: 0 0 20px;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main {
+        padding: 45px 40px;
+        width: 100%;
+    
+        h2 {
+            margin: 0 0 20px;
+            font-size: 24px;
+        }
+    
+        h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+    
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .subscription {
+        width: 50%;
+        padding: 45px 39px 40px 40px;
+    
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .why-us {
+        width: 50%;
+        padding: 45px 40px 38px;
+    
+        ul {
+            li {
+                margin-bottom: 2px;
+            }
+        }
+    }
+}
